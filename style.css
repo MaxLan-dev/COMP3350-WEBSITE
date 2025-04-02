@@ -239,3 +239,50 @@ p, li {
     align-items: center;
   }
 }
+/* Add to :root */
+:root {
+  --vision-bg: rgba(244, 162, 97, 0.1);
+}
+
+/* Vision Section Styles */
+#vision {
+  background: var(--vision-bg);
+  text-align: center;
+}
+
+#vision h2 {
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+  position: relative;
+}
+
+#vision h2::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: var(--accent-green);
+  margin: 10px auto 0;
+}
+
+#vision .para {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#vision .para p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  #vision h2 {
+    font-size: 2rem;
+  }
+
+  #vision .para p {
+    font-size: 1rem;
+  }
+}
